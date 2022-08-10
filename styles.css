@@ -1,0 +1,662 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cursive;
+}
+body {
+    background: #272727;
+    color: white;
+    margin : 0;
+    padding : 0;
+    overflow-x: hidden;
+
+}
+
+
+
+nav {
+    height: 90px;
+    background: #262323;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 14%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.7s ease;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 250, 250);
+    transition: all 0.5s ease;
+    padding: 5px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+nav .menu-btn i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+nav ul li a:hover {
+    background: rgb(255, 255, 255);
+    color: #262323;
+}
+nav ul li {
+    margin: 0px 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav .logo {
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav .lio {
+    color: cyan;
+}
+
+#click {
+    display: none;
+}
+#click:checked~ul {
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+
+@media (max-width:830px) {
+    nav ul li a:hover {
+        background: none;
+        color: rgb(69, 255, 255);
+        transition: all 0.5s ease;
+    }
+    nav ul {
+        position: fixed;
+        top: 90px;
+        left: -300%;
+        box-shadow: 0px 15px 30px 0px rgb(0 0 0 /70%);
+        background: #3d3d3d;
+        display: block;
+        font-size: 20px;
+        text-align: center;
+        padding: 60px 60%;
+        padding-left: 0;
+        margin-right: 0px;
+
+    }
+    nav ul li {
+        font-size: 20px;
+        border-left: 2px solid cyan;
+        margin: 20px;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 0px;
+        padding: 10px 80%;
+        align-items: center;
+        padding-left: 0;
+    }
+    nav ul li a {
+        font-size: 18px;
+        background: none;
+        padding: 15px;
+        margin: 15px;
+        display: block;
+    }
+    nav {
+        height: 90px;
+        top: 0;
+    }
+    nav .menu-btn i {
+        display: block;
+    }
+    #click:checked~.menu-btn i:before {
+        content: "\f410";
+    }
+    section .home-txt {
+        display: block;
+        margin-left: 0;
+        margin-right: 0px;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }
+    section .hm img {
+        margin-top: 50px;
+        width: 80%;
+        padding-top: 0;
+        padding: 200 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10%;
+        transition: all 0.7s ease;
+        border-radius: 10px;
+    }
+    section .hm {
+        margin-top: 0;
+        padding-top: 0;
+        top: 100px;
+        padding-bottom: 0;
+        transition: all 0.7s ease;
+    }
+    section .hm h1 {
+        font-size: 50px;
+    }
+    section .hm h5 {
+        padding-top: 50;
+        font-size: 18px;
+    }
+    section .hm p {
+        font-size: 15px;
+    }
+    section .social {
+        margin-left: 20%;
+    }
+    .resume .social{
+        margin-left: 10;
+    }
+
+}
+
+
+@media (max-width:830px)and (min-width:0px) {
+    nav {
+        top: 0;
+    }
+    section .home-txt {
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }
+    section .hm img {
+        margin-top: 50px;
+        width: 80%;
+        padding-top: 0;
+        padding: 200 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10%;
+        transition: all 0.15s ease;
+        border-radius: 10px;
+    }
+    section .hm {
+        margin-top: 0;
+        padding-top: 0;
+        top: 100px;
+        padding-left: 60px;
+        padding-right: 50px;
+        margin-left: 0;
+        padding-bottom: 0;
+        transition: all 0.7s ease;
+    }
+    
+    section .about-txt {
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }
+    section .abt img {
+        margin-top: 50px;
+        width: 80%;
+        padding-top: 0;
+        padding: 200 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10%;
+        transition: all 0.15s ease;
+        border-radius: 10px;
+    }
+    section .abt {
+        margin-top: 0;
+        padding-top: 0;
+        top: 100px;
+        padding-left: 60px;
+        padding-right: 50px;
+        margin-left: 0;
+        padding-bottom: 0;
+        transition: all 0.7s ease;
+    }
+    section .abt1 {
+        text-align: center;
+    }
+    section .resume-txt {
+        display: block;
+        margin-left: 25;
+        margin-right: 25;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }    
+    section .row {
+        margin-top: 0;
+        padding-top: 40;
+        top: 100px;
+        padding-left: 50px;
+        padding-right: 10px;
+        margin-left: 0;
+        padding-bottom: 20;
+        margin-bottom: 35;
+        transition: all 0.7s ease;
+    }
+        .resume .social {
+            margin-left: 20;
+        }
+}
+
+
+@media (max-width:1140px)and (min-width:830px) {
+    nav{
+        top: 0;
+    }
+    section .home-txt {
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }
+    section .hm img {
+        margin-top: 50px;
+        width: 80%;
+        padding-top: 0;
+        padding: 200 10%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-left: 10%;
+        transition: all 0.7s ease-out;
+    }
+    section .hm {
+        margin-top: 0;
+        padding-top: 0;
+        top: 100px;
+        padding-left: 60px;
+        padding-right: 50px;
+        margin-left: 0;
+        padding-bottom: 0;
+        transition: all 0.7s ease;
+    }
+    section .hm h5{
+        padding-top: 50;;
+    }
+    section .about-txt {
+        text-align: center;
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }
+    section .abt img {
+        margin-top: 50px;
+        width: 80%;
+        padding-top: 0;
+        padding: 200 10%;
+        padding-top: 0;
+        padding-bottom: 50;
+        margin-left: 10%;
+        transition: all 0.7s ease-out;
+    }
+    section .abt {
+        margin-top: 0;
+        padding-top: 0;
+        top: 100px;
+        padding-left: 60px;
+        padding-right: 50px;
+        margin-left: 0;
+        padding-bottom: 0;
+        transition: all 0.7s ease;
+    }
+    section .abt1{
+        text-align: center;
+    }
+    section .resume-txt {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2rem;
+        margin-left: 15;
+        margin-right: 15px;
+        margin-top: 50px;
+        transition: all 0.7s ease;
+    }
+    section .row {
+        margin-top: 0;
+        padding-top: 30;
+        top: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: 0;
+        padding-bottom: 10;
+        transition: all 0.7s ease;
+    }
+        .resume .social {
+            margin-left: 25;
+        }
+}
+
+
+.hr{
+    height:1px;
+    border-width:0;
+    color:cyan;
+    background-color:cyan;
+    margin-left: 10;
+}
+
+
+.home-txt {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    transition: all 0.7s ease;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 180px;
+    margin-top: 0;
+}
+section .home-txt a{
+    text-decoration: none;
+    color: cyan;
+}
+.home-txt img {
+    margin-left: 0;
+    margin-top: 60px;
+    width: 100%;
+    transition: all 0.7s ease;
+    border-radius: 10px;
+}
+.hm h1 {
+    color: cyan;
+    padding: 10px 10%;
+    font-size: 50px;
+    letter-spacing: 1px;
+    top: 50px;
+    padding: 0;
+}
+.hm h5 {
+    font-size: 18px;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+.hm p {
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.hm {
+    text-align: justify;
+    padding: 60px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    transition: all 0.7s ease;
+}
+
+
+
+.about{
+    padding-top: 5;
+    transition: all 0.7s ease;
+}
+.about-txt {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    transition: all 0.7s ease;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+   margin-top: 200;
+}
+.about-txt img {
+    margin-left: 0;
+    margin-top: 0px;
+    width: 100%;
+    transition: all 0.7s ease;
+    border-radius: 10px;
+}
+.abt , .abt1 {
+    text-align: justify;
+    padding: 60px;
+    margin-top: 0px;
+    letter-spacing: 1px;
+    transition: all 0.7s ease;
+}
+.abt1 h2 {
+    color: cyan;
+    padding: 10px 10%;
+    font-size: 50px;
+    letter-spacing: 1px;
+    top: 50px;
+    padding: 0;
+}
+.abt1 h5 {
+    font-size: 18px;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+.abt1 p {
+    font-size: 15px;
+    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+
+
+
+.resume{
+    padding-top: 100;
+}
+.resume-txt {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3rem;
+    align-items: center;
+    margin: 50px;
+    padding: 50px 5%;
+}
+.center {
+    text-align: center;
+    font-size: 70px;
+    font-family: Cursive;
+    color: cyan;
+    align-items: center;
+}
+.row {
+    padding: 50px 35px;
+    background: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .40s;
+}
+.row h3 {
+    font-size: 35px;
+    text-align: justify;
+    padding: 15px 10%;
+    padding-left: 0;
+    letter-spacing: 2px;
+}
+.row h5 {
+    font-size: 15px;
+    text-align: justify;
+    padding: 15px 10%;
+    padding-left: 0;
+    letter-spacing: 2px;
+}
+.row p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 15px 10%;
+    padding-left: 0;
+    letter-spacing: .2px;
+}
+.row i {
+    font-size: 30px;
+}
+.row a {
+    color: cyan;
+    text-decoration: none;
+}
+
+
+section .social{
+    margin : 0;
+    margin-left: 15%;
+    margin-right : 20;
+    margin-top :100px;
+    padding : 0 20%;
+    text-align: center;
+    align-items: center;
+}
+.sc {
+    display: flex;
+    margin: 40px 10%;
+}
+.sc li {
+    
+    list-style: none;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+}
+.sc li a {
+    line-height: 70px;
+    font-size: 27px;
+    padding: 20;
+
+}
+.fa-brands {
+    font-weight: 400;
+    color: white;
+}
+
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: #0b0b13;
+    color: white;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    margin-right: 300px;
+}
+
+form .sbtn {
+    background: cyan;
+    color: white;
+    box-shadow: 4px 4px white;
+    padding: 0 25px;
+    line-height: 42px;
+    display: inline-block;
+    border: 1px solid ;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.contact-txt form {
+    position: relative;
+    width: 550px;
+}
+
+.contact-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+    margin-bottom: 4.2rem;
+}
+
+.c h3 {
+    font-size: 35px;
+    text-align: center;
+    padding: 15px 10%;
+    padding-left: 0;
+    letter-spacing: 2px;
+    color: cyan;
+}
+
+.contact {
+    margin: 100px;
+    padding: 30px 10%;
+}
+
+.social {
+    margin: 50px;
+    padding: 30px 10%;
+    padding-left: 200px;
+    padding-right: 0px;
+    margin-left: 150px;
+}
+
+.photo h1{
+    top: 100;
+    height: 100;
+    padding-top:100;
+    font-size:20;
+    padding: 100;
+}
+
+
+#myBtn {
+    transition: .7s ease;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #272727;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    transition: 5s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+#myBtn:hover {
+    transition: 3s ease;
+    background-color: black;
+}
