@@ -1,4 +1,5 @@
-document.oncontextmenu = new Function("return false;");
+// This line was causing right click issue
+// document.oncontextmenu = new Function("return false;");
 
 window.addEventListener(
     "scroll",
